@@ -1,4 +1,3 @@
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
@@ -578,6 +577,9 @@ public class LinkParserTest {
     public void testNumpy() throws MalformedURLException {
       List<URL> expected = List.of(
           new URL("https://www.cs.usfca.edu/~cs212/numpy/index.html"),
+          new URL("https://numpy.org/"),
+          new URL("https://numpy.org/doc"),
+          new URL("https://www.cs.usfca.edu/~cs212/numpy/index.html"),
           new URL("https://www.cs.usfca.edu/~cs212/numpy/genindex.html"),
           new URL("https://www.cs.usfca.edu/~cs212/numpy/user/setting-up.html"),
           new URL("https://www.cs.usfca.edu/~cs212/numpy/contents.html"),
@@ -667,9 +669,10 @@ public class LinkParserTest {
    */
   public static List<URL> getGutenURLs() throws MalformedURLException {
     return List.of(
+        new URL("https://www.cs.usfca.edu/~cs212/guten/1400-h/1400-h.htm"),
+        new URL("https://www.cs.usfca.edu/~cs212/guten/50468-h/50468-h.htm"),
         new URL("https://www.cs.usfca.edu/~cs212/guten/1228-h/1228-h.htm"),
         new URL("https://www.cs.usfca.edu/~cs212/guten/1322-h/1322-h.htm"),
-        new URL("https://www.cs.usfca.edu/~cs212/guten/1400-h/1400-h.htm"),
         new URL("https://www.cs.usfca.edu/~cs212/guten/1661-h/1661-h.htm"),
         new URL("https://www.cs.usfca.edu/~cs212/guten/22577-h/22577-h.htm"),
         new URL("https://www.cs.usfca.edu/~cs212/guten/37134-h/37134-h.htm"));
